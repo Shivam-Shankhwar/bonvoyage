@@ -60,9 +60,9 @@ function Allactivities() {
 
       {/*-------------------------------API-HIT---------------------------- */}
 
-      <div className="container-fluid px-5">
-        <form onSubmit={getHotels}>
-          <div className="input-group w-50 ms-4">
+      <div className="container-fluid">
+        <form onSubmit={getHotels} className="hotel_search">
+          <div className="input-group w-50">
             <input
               type="text"
               className="form-control"

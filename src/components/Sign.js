@@ -87,7 +87,7 @@ const Sign = () => {
           <form onSubmit={handleSubmit}>
             <h1 className="h3 mb-3 fw-normal">
               {' '}
-              <span className="text-black">Goddam it just Sign In</span>{' '}
+              <span className="text-black">Sign In</span>{' '}
               <span className="text-success">Safely</span>
             </h1>
 

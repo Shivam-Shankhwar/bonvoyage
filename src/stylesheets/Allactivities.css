@@ -46,6 +46,11 @@
   visibility: visible;
 }
 
+.hotel_search {
+  padding: 40px;
+  margin: 0;
+}
+
 /* RESPONSIVE */
 @media screen and (min-width: 1320px) {
   .gallery {
