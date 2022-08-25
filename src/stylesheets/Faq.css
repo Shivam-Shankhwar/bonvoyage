@@ -1,0 +1,12 @@
+.nav-tabs .nav-link:visited {
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #c7ccd2;
+  border-right: 2px solid #c7ccd2;
+  border-top: 2px solid #c7ccd2;
+
+  isolation: isolate;
+}
+
+.nav-link {
+  color: #444;
+}

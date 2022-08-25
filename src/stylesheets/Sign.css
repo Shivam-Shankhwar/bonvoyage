@@ -1,0 +1,12 @@
+.form-signIn {
+  width: 100%;
+  max-width: 400px;
+  padding: 15px;
+  margin: auto;
+}
+
+.error {
+  color: #ff1818d4;
+  font-weight: 600;
+}
+

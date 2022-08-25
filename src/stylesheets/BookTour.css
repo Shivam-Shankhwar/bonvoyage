@@ -1,0 +1,13 @@
+.counter__increment,
+.counter__decrement {
+  padding: 5px 10px;
+  margin: 10px;
+}
+
+.counter__display {
+  width: 60px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #dedede;
+  padding: 5px 10px;
+}

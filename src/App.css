@@ -1,0 +1,30 @@
+.header_brand_icon {
+  color: white;
+}
+
+.fa-linkedin {
+  color: #8ab4f8;
+}
+
+.fas {
+  margin-right: 10px;
+}
+
+/* Header.js */
+.cart {
+  margin-left: 20px;
+  margin-top: 2px;
+}
+
+.cart__icon {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* 991px */
+@media only screen and (max-width: 61.9375em) {
+  .cart {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
