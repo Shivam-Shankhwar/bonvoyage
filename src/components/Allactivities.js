@@ -61,7 +61,7 @@ function Allactivities() {
       {/*-------------------------------API-HIT---------------------------- */}
 
       <div className="container-fluid">
-        <form className="row g-3 search_hotel">
+        <form className="row g-3 search_hotel" onSubmit={getHotels} >
           <div className="col-md-6">
             <input
               type="text"
