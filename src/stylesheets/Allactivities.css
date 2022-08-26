@@ -46,7 +46,7 @@
   visibility: visible;
 }
 
-.hotel_search {
+.search_hotel {
   padding: 40px;
   margin: 0;
 }
@@ -61,5 +61,11 @@
 @media screen and (max-width: 800px) {
   .gallery {
     grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(1, auto);
   }
 }

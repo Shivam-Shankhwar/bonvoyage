@@ -27,7 +27,7 @@ function Allactivities() {
   return (
     <div>
       {/*----------------------------------HEADER------------------------------- */}
-      <div className="container mb-5">
+      <div className="container-fluid mb-5 px-5 mt-4">
         <div className="row mb-5">
           <div className="col-sm-12 col-md-6 col-lg-6 col-12 mt-5">
             <h1>About UnSplash API </h1>
@@ -47,7 +47,7 @@ function Allactivities() {
               the Api by clicking the button below.
             </p>
           </div>
-          <div className="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end mt-5 ps-5">
+          <div className="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end px-5">
             <img
               src={img0}
               alt="Demo Visual"
@@ -61,12 +61,40 @@ function Allactivities() {
       {/*-------------------------------API-HIT---------------------------- */}
 
       <div className="container-fluid">
-        <form onSubmit={getHotels} className="hotel_search">
-          <div className="input-group w-50">
+        <form className="row g-3 search_hotel">
+          <div className="col-md-6">
             <input
               type="text"
               className="form-control"
-              placeholder="Search Hotels"
+              placeholder="Search Hotels 🔎"
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
+              maxLength={50}
+              value={hotel}
+              onChange={e => setHotel(e.target.value)}
+            />{' '}
+          </div>
+
+          <div className="col-12">
+            <button className="btn btn-outline-success me-1" type="submit">
+              Go<i className="ms-2 pe-0 fas fa-search"></i>
+            </button>
+            <button
+              className="btn btn-danger"
+              onClick={() => window.location.reload()}
+              type="button"
+            >
+              reset
+            </button>
+          </div>
+        </form>
+
+        {/* <form onSubmit={getHotels} className="hotel_search">
+          <div className="input-group">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Search Hotels 🔎"
               aria-label="Recipient's username"
               aria-describedby="basic-addon2"
               maxLength={50}
@@ -86,7 +114,7 @@ function Allactivities() {
               </button>
             </div>
           </div>
-        </form>
+        </form> */}
 
         <div className="gallery">
           {image.map((value, index) => {
