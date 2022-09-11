@@ -51,6 +51,10 @@
   margin: 0;
 }
 
+.search_hotel input::placeholder {
+  color: #000000a2;
+}
+
 /* RESPONSIVE */
 @media screen and (min-width: 1320px) {
   .gallery {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import Axios from 'axios';
 
 import img0 from '../assets/images/img/img-0.jpg';
@@ -7,6 +7,7 @@ import '../stylesheets/Allactivities.css';
 function Allactivities() {
   const [image, setImage] = useState([]);
   const [hotel, setHotel] = useState('');
+  const handleInputFocus = useRef(null);
 
   const API_ENDPOINT = `https://api.unsplash.com/search/photos?client_id=`;
   const key = 'wLKEI7W1sUb_Qm2qu1t9Yf7WVbwD2dlMtkIaiOhr4Yo';
@@ -14,12 +15,28 @@ function Allactivities() {
   //Random Number Generator: Math.random(Math.random() * (max - min + 1)) + min;
   let randomPage = Math.floor(Math.random() * 50) + 1;
 
+  useEffect(() => {
+    function handleOnKeyDown(e) {
+      if (e.key === '/') {
+        e.preventDefault();
+        handleInputFocus.current.focus();
+      } else if (e.key === 'Escape') {
+        e.preventDefault();
+        handleInputFocus.current.blur();
+      }
+    }
+    document.addEventListener('keydown', handleOnKeyDown);
+
+    return () => {
+      document.removeEventListener('keydown', handleOnKeyDown);
+    };
+  }, []);
+
   const getHotels = e => {
     e.preventDefault();
     Axios.get(`${API_ENDPOINT}${key}&query=${hotel}&page=${randomPage}`).then(
       res => {
         setImage(res.data.results);
-        console.log(image);
       }
     );
   };
@@ -61,18 +78,19 @@ function Allactivities() {
       {/*-------------------------------API-HIT---------------------------- */}
 
       <div className="container-fluid">
-        <form className="row g-3 search_hotel" onSubmit={getHotels} >
+        <form className="row g-3 search_hotel" onSubmit={getHotels}>
           <div className="col-md-6">
             <input
               type="text"
               className="form-control"
-              placeholder="Search Hotels 🔎"
+              placeholder="Search Hotels  [/]"
               aria-label="Recipient's username"
               aria-describedby="basic-addon2"
               maxLength={50}
               value={hotel}
               onChange={e => setHotel(e.target.value)}
-            />{' '}
+              ref={handleInputFocus}
+            />
           </div>
 
           <div className="col-12">
