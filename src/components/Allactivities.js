@@ -13,7 +13,7 @@ function Allactivities() {
   const key = 'wLKEI7W1sUb_Qm2qu1t9Yf7WVbwD2dlMtkIaiOhr4Yo';
 
   //Random Number Generator: Math.random(Math.random() * (max - min + 1)) + min;
-  let randomPage = Math.floor(Math.random() * 50) + 1;
+  let randomPage = Math.floor(Math.random() * 10) + 1;
 
   useEffect(() => {
     function handleOnKeyDown(e) {
@@ -106,33 +106,6 @@ function Allactivities() {
             </button>
           </div>
         </form>
-
-        {/* <form onSubmit={getHotels} className="hotel_search">
-          <div className="input-group">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Search Hotels 🔎"
-              aria-label="Recipient's username"
-              aria-describedby="basic-addon2"
-              maxLength={50}
-              value={hotel}
-              onChange={e => setHotel(e.target.value)}
-            />
-            <div className="input-group-append ms-3">
-              <button className="btn btn-outline-success me-1" type="submit">
-                Go<i className="ms-2 pe-0 fas fa-search"></i>
-              </button>
-              <button
-                className="btn btn-danger"
-                onClick={() => window.location.reload()}
-                type="button"
-              >
-                reset
-              </button>
-            </div>
-          </div>
-        </form> */}
 
         <div className="gallery">
           {image.map((value, index) => {
