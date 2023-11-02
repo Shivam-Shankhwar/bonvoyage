@@ -92,7 +92,7 @@ function Footer() {
                 23 Nehru Road, Sector 60, Noida, Uttar Pradesh
               </p>
               <a
-                href="tel:790-549-8297"
+                href="tel:790-579-82417"
                 className="mb-2 footer-link text-muted"
               >
                 <i className="fas fas fa-phone mb-1 text-muted"></i>
