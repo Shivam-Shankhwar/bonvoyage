@@ -96,11 +96,11 @@ function Footer() {
                 className="mb-2 footer-link text-muted"
               >
                 <i className="fas fas fa-phone mb-1 text-muted"></i>
-                790-549-8297
+                790-605-8194
               </a>
               <br />
               <a
-                href="mailto:Chandrakant199710@gmail.com"
+                href="mailto:Chandrakant19710@gmail.com"
                 className="footer-link text-muted"
               >
                 <i className="fas fa-envelope-open text-muted" />
@@ -112,7 +112,7 @@ function Footer() {
 
         <div className="d-flex justify-content-between pt-2 mt-4 border-top">
           <p className="text-muted">
-            &copy; 2022 BonVoyage | All Rights Reserved.
+            &copy; 2023 BonVoyage | All Rights Reserved.
           </p>
           <ul className="list-unstyled d-flex">
             <li className="ms-3">
