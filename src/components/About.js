@@ -78,9 +78,9 @@ function About() {
           <div className="col-md-6 px-0">
             <h1 className="display-6 fst-italic fw-normal">Meet us at the Nearest Branch</h1>
             <p className="lead my-3 fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore saepe nihil? Commodi quo ad assumenda aut dolore neque saepe  ...............</p>
-            <p className='fw-bolder'>Mob no- 79 0549 8297</p>
-            <p className='fw-bolder'>E-mail- Shivamshankhwar559@gmail.com</p>
-            <p className='fw-bolder'>Location - Shahjahanpur (242001)</p>
+            <p className='fw-bolder'>Mob no- 79 0605 8195</p>
+            <p className='fw-bolder'>E-mail- Shivamshankhwar59@gmail.com</p>
+            <p className='fw-bolder'>Location - Bareilly (234001)</p>
           </div>
         </div>
         <div className="row featurette mt-5  bd-placeholder-img">
